@@ -1,6 +1,6 @@
 vendor
 coverage
-
+.bundle
 web/data/*
 
 log/*.log
