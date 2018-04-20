@@ -2,7 +2,7 @@ require 'English'
 require 'yaml'
 require 'json'
 require 'sequel'
-require 'faker'
+require 'ffaker'
 require 'net/scp'
 require 'shellwords'
 

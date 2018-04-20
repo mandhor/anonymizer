@@ -1,4 +1,4 @@
-require 'faker'
+require 'ffaker'
 
 require 'spec_helper'
 require './lib/anonymizer/model/fake/pesel.rb'
