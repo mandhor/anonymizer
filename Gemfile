@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rubocop', require: false
 
-gem 'mysql'
+gem 'mysql2'
 gem 'sequel'
 
 gem 'net-scp'
