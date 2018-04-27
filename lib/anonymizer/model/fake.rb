@@ -1,8 +1,8 @@
 # Generator to fake data
 class Fake
   def self.user
-    firstname = Faker::Name.first_name
-    lastname = Faker::Name.last_name
+    firstname = FFaker::Name.first_name
+    lastname = FFaker::Name.last_name
 
     prepare_user_hash firstname, lastname
   end
@@ -36,20 +36,20 @@ class Fake
     {
       firstname: firstname,
       lastname: lastname,
-      email: add_uniq_to_email(Faker::Internet.email("#{firstname} #{lastname}")),
-      login: add_uniq_to_end_of(Faker::Internet.user_name("#{firstname} #{lastname}", %w[. _ -])),
-      telephone: Faker::PhoneNumber.phone_number,
-      company: Faker::Company.name,
-      street: Faker::Address.street_name,
-      postcode: Faker::Address.postcode,
-      city: Faker::Address.city,
-      vat_id: Faker::Company.swedish_organisation_number,
-      ip: Faker::Internet.private_ip_v4_address,
-      quote: Faker::StarWars.quote,
-      website: Faker::Internet.domain_name,
-      iban: Faker::Bank.iban,
+      email: add_uniq_to_email(FFaker::Internet.email("#{firstname} #{lastname}")),
+      login: add_uniq_to_end_of(FFaker::Internet.user_name("#{firstname} #{lastname}")),
+      telephone: FFaker::PhoneNumber.phone_number,
+      company: FFaker::Company.name,
+      street: FFaker::Address.street_name,
+      postcode: FFaker::AddressCHIT.postal_code,
+      city: FFaker::Address.city,
+      vat_id: FFaker::CompanyIT.partita_iva,
+      ip: FFaker::Internet.ip_v4_address,
+      quote: FFaker::HealthcareIpsum.phrase,
+      website: FFaker::Internet.domain_name,
+      iban: '',
       regon: generate_regon,
-      pesel: Fake::Pesel.generate,
+      pesel: FFaker::Identification.ssn,
       json: '{}'
     }
   end

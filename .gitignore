@@ -1,6 +1,8 @@
 vendor
 coverage
-
+.bundle
+config/env/*.yml
+config/project/*.json
 web/data/*
 
 log/*.log

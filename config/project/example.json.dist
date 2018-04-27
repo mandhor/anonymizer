@@ -1,0 +1,11 @@
+{
+    "type": "extended",
+    "basic_type": "magento_1_9",
+    "random_string": "ba74a64a152b84ec004d03caba15ba95",
+    "dump_server": {
+        "host": "",
+        "port": "",
+        "user": "",
+        "path": ""
+    }
+}

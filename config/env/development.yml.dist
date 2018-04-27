@@ -1,0 +1,7 @@
+tmp_path:
+logger:
+  enabled: true
+database:
+  host:
+  user:
+  pass:
